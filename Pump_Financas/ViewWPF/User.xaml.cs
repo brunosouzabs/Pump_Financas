@@ -23,5 +23,10 @@ namespace ViewWPF
         {
             InitializeComponent();
         }
+
+        private void ltbPerfil_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }

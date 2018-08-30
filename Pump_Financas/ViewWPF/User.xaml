@@ -13,6 +13,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="25" Margin="130,148,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="422" Background="White" Opacity="0.7"/>
+        <Label x:Name="lblNome" Content="Nome Completo" HorizontalAlignment="Left" Margin="13,148,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="25" Margin="130,193,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="422" Opacity="0.7"/>
+        <Label x:Name="lblEmail" Content="E-mail" HorizontalAlignment="Left" Margin="79,193,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <ListBox x:Name="ltbPerfil" HorizontalAlignment="Left" Height="25" Margin="130,236,0,0" VerticalAlignment="Top" Width="422" SelectionChanged="ltbPerfil_SelectionChanged" Opacity="0.7"/>
+        <Label x:Name="lblPerfil" Content="Perfil" HorizontalAlignment="Left" Margin="85,236,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
 
     </Grid>
 </Window>
