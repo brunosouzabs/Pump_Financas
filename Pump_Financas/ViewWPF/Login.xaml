@@ -5,8 +5,31 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
-        Title="Login" Height="350" Width="525">
+        Title="Login" Height="596" Width="800">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
+        </Grid.Background>
+        <TextBox TextBlock.Foreground="Gray" x:Name="txtUser" Height="50" Margin="232,191,0,0" TextWrapping="Wrap" Width="300" Opacity="0.7" TextOptions.TextFormattingMode="Display" MinLines="8" FontSize="20" FontFamily="OCR A Std" TextAlignment="Justify" HorizontalAlignment="Left" VerticalContentAlignment="Center" VerticalAlignment="Top" AutomationProperties.IsRequiredForForm="True"/>
+        <Image x:Name="imgLogin" HorizontalAlignment="Left" Height="50" Margin="177,191,0,0" VerticalAlignment="Top" Width="50" Source="Icons/iconLogin.png">
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Icons/iconLogin.png" Stretch="UniformToFill"/>
+            </Image.OpacityMask>
+        </Image>
+        <Image x:Name="imgPass" HorizontalAlignment="Left" Height="50" Margin="177,263,0,0" VerticalAlignment="Top" Width="50" Source="Icons/iconPassword.png" IsEnabled="False" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="-90.401"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Image.RenderTransform>
+            <Image.OpacityMask>
+                <ImageBrush ImageSource="Icons/iconPassword.png"/>
+            </Image.OpacityMask>
+        </Image>
+        <PasswordBox HorizontalAlignment="Left" Margin="232,261,0,0" VerticalAlignment="Top" Width="300" Height="50" PasswordChar="*"/>
+
     </Grid>
 </Window>
