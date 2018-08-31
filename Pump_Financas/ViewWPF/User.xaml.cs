@@ -28,5 +28,10 @@ namespace ViewWPF
         {
 
         }
+
+        private void cbxPerfil_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
