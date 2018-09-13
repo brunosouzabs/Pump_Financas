@@ -23,5 +23,10 @@ namespace ViewWPF
         {
             InitializeComponent();
         }
+
+        private void cbxCategoria_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
