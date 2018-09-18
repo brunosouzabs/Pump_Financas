@@ -5,8 +5,19 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF"
         mc:Ignorable="d"
-        Title="Configuration" Height="300" Width="300">
+        Title="Configuration" Height="600" Width="800">
     <Grid>
-        
+        <Button x:Name="btnCadastroUser" Content="" HorizontalAlignment="Left" Margin="84,113,0,0" VerticalAlignment="Top" Width="75" Height="75"/>
+        <Button x:Name="btnCadastroProduto" Content="" HorizontalAlignment="Left" Margin="84,213,0,0" VerticalAlignment="Top" Width="75" Height="75"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="732,492,0,0" VerticalAlignment="Top" Width="50" Height="50" BorderBrush="{x:Null}" Foreground="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icons/IconHelp.png" Stretch="Uniform"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Menu" HorizontalAlignment="Left" Margin="84,529,0,0" VerticalAlignment="Top" Width="75" Height="30" FontFamily="OCR A Std" FontSize="18"/>
+        <Label Content="Cadastro de Usuários" HorizontalAlignment="Left" Margin="164,138,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="OCR A Std"/>
+        <Label Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="164,238,0,0" VerticalAlignment="Top" FontFamily="OCR A Std" FontSize="20"/>
+        <Label x:Name="lblHelp" Content="Help" HorizontalAlignment="Left" Margin="732,542,0,0" VerticalAlignment="Top" FontFamily="OCR A Std" FontSize="14"/>
+
     </Grid>
 </Window>
