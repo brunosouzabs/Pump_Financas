@@ -10,8 +10,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <Button x:Name="btnCadastroUser" Content="" HorizontalAlignment="Left" Margin="84,113,0,0" VerticalAlignment="Top" Width="75" Height="75"/>
-        <Button x:Name="btnHelpConfig" Content="" Margin="757,517,10,0" VerticalAlignment="Top" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="btnCadastroUser" Content="" HorizontalAlignment="Left" Margin="84,113,0,0" VerticalAlignment="Top" Width="75" Height="75" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="Icons/iconLogin.png"/>
+            </Button.Background>
+        </Button>
+        <Button x:Name="btnHelpConfig" Content="" Margin="757,512,10,0" VerticalAlignment="Top" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Icons/IconHelp.png" Stretch="Uniform"/>
             </Button.Background>

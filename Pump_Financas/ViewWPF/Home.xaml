@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Home" Height="600" Width="800">
     <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
+        </Grid.Background>
         <Button x:Name="btnProdutos" Content="Produtos" HorizontalAlignment="Left" Margin="47,100,0,0" VerticalAlignment="Top" Width="150" Height="80" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="btnCadastroProd" Content="Cadastro Produtos" HorizontalAlignment="Left" Margin="47,210,0,0" VerticalAlignment="Top" Width="150" Height="80" FontSize="16" FontWeight="Bold"/>
         <Button x:Name="btnConfig" Content="Configurações" HorizontalAlignment="Left" Margin="47,316,0,0" VerticalAlignment="Top" Width="150" Height="80" FontSize="16" FontWeight="Bold"/>
