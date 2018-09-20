@@ -13,7 +13,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="25" Margin="130,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Background="White" Opacity="0.7" AutomationProperties.IsColumnHeader="True"/>
+        <TextBox x:Name="txtNome" Text="{Binding Nome}" HorizontalAlignment="Left" Height="25" Margin="130,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Background="White" Opacity="0.7" AutomationProperties.IsColumnHeader="True"/>
         <Label x:Name="lblNome" Content="Nome Completo" HorizontalAlignment="Left" Margin="13,79,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="25" Margin="130,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Opacity="0.7"/>
         <Label x:Name="lblEmail" Content="E-mail" HorizontalAlignment="Left" Margin="79,124,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
