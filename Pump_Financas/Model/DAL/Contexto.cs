@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Model.DAL
 {
-    class Contexto : DbContext
+    public class Contexto : DbContext
     {
         public Contexto() : base("pumpestoque")
         {
