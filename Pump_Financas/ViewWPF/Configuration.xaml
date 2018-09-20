@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Configuration" Height="600" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
@@ -15,7 +18,7 @@
                 <ImageBrush ImageSource="Icons/iconLogin.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnHelpConfig" Content="" Margin="757,512,10,0" VerticalAlignment="Top" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}">
+        <Button x:Name="btnHelpConfig" Content="" Margin="757,512,9.6,0" VerticalAlignment="Top" Height="25" BorderBrush="{x:Null}" Foreground="{x:Null}">
             <Button.Background>
                 <ImageBrush ImageSource="Icons/IconHelp.png" Stretch="Uniform"/>
             </Button.Background>

@@ -29,6 +29,7 @@
         <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="410,345,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
         <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="157,345,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
         <CheckBox x:Name="cbxProdAtivo" Content="Listar" HorizontalAlignment="Left" Margin="522,293,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnProdCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="503,459,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Foreground="Red"/>
 
 
     </Grid>
