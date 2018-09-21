@@ -9,24 +9,26 @@ namespace Controller
     {
         Contexto contexto = new Contexto();
 
+        //INSERIR NOVO USUÁRIO
         void Inserir(Usuario u)
         {
             contexto.Usuarios.Add(u);
             contexto.SaveChanges();
         }
 
-        List<Usuario> ListarTodosPerson()
+        //LISTAS USUÁRIOS
+        List<Usuario> ListarTodosUsuarios()
         {
-
             return contexto.Usuarios.ToList();
         }
 
+        //BUSCA USUÁRIOS POR ID
         Usuario BuscarPorID(int id)
         {
-
             return contexto.Usuarios.Find(id);
         }
 
+        //EXLUIR USUÁRIOS
         void Excluir(int id)
         {
             Usuario pExcluir = BuscarPorID(id);
@@ -39,29 +41,27 @@ namespace Controller
             }
         }
 
-        void Editar(int id, Usuario novoDadosPerson)
+        //EDITAR USUÁRIOS
+        void Editar(int id, Usuario novoDadosUsuario)
         {
-            Usuario personAntigo = BuscarPorID(id);
+            Usuario usuarioAntigo = BuscarPorID(id);
 
-            if (personAntigo != null)
+            if (usuarioAntigo != null)
             {
-                personAntigo.FirstName = novoDadosPerson.FirstName;
-                personAntigo.LastName = novoDadosPerson.LastName;
-                personAntigo.Title = novoDadosPerson.Title;
+                usuarioAntigo.Nome = novoDadosUsuario.Nome;
+                usuarioAntigo.Email = novoDadosUsuario.Email;
+                usuarioAntigo.Perfil = novoDadosUsuario.Perfil;
 
-                contexto.Entry(personAntigo).State =
-     System.Data.Entity.EntityState.Modified;
+                contexto.Entry(usuarioAntigo).State =
+                System.Data.Entity.EntityState.Modified;
                 contexto.SaveChanges();
             }
         }
 
+        //PESQUISAR USUÁRIOS POR NOME
         List<Usuario> PesquisarPorNome(string Nome)
         {
-
-            var lista = from u in contexto.Usuarios
-                        where u.Nome == Nome
-                        select u;
-
+            var lista = from u in contexto.Usuarios where u.Nome == Nome select u;
             return lista.ToList();
         }
     }
