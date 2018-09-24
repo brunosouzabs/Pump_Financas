@@ -23,6 +23,7 @@ namespace ViewWPF
         public Login()
         {
             InitializeComponent();
+       
         }
 
         private void InitializeComponent()

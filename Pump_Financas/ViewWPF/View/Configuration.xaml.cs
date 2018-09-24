@@ -23,5 +23,10 @@ namespace ViewWPF
         {
             InitializeComponent();
         }
+
+        private void btnCadastroUser_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

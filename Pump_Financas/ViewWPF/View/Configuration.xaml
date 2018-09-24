@@ -13,9 +13,9 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <Button x:Name="btnCadastroUser" Content="" HorizontalAlignment="Left" Margin="84,113,0,0" VerticalAlignment="Top" Width="75" Height="75" BorderBrush="{x:Null}">
+        <Button x:Name="btnCadastroUser" Content="" HorizontalAlignment="Left" Margin="84,113,0,0" VerticalAlignment="Top" Width="75" Height="75" BorderBrush="{x:Null}" Click="btnCadastroUser_Click">
             <Button.Background>
-                <ImageBrush ImageSource="Icons/iconLogin.png"/>
+                <ImageBrush ImageSource="/ViewWPF;component/Icons/iconLogin.png"/>
             </Button.Background>
         </Button>
         <Button x:Name="btnMenuConfig" Content="Menu" HorizontalAlignment="Left" Margin="10,529,0,0" VerticalAlignment="Top" Width="150" Height="30" FontFamily="OCR A Std" FontSize="18"/>
