@@ -26,9 +26,9 @@ namespace ViewWPF
        
         }
 
-        private void btnCadastroUser_Click(object sender, RoutedEventArgs e)
+        private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
-           
+
         }
     }
 }
