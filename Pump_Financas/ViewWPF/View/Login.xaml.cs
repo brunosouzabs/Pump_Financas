@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Model;
+using Model.DAL;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -20,6 +22,8 @@ namespace ViewWPF
     /// </summary>
     public partial class MainWindow : Window
     {
+        Contexto contexto = new Contexto();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -28,7 +32,13 @@ namespace ViewWPF
 
         private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
+           
+        }
 
+        private void btnCadastrarNovoUser_Click(object sender, RoutedEventArgs e)
+        {
+            User user = new User();
+            user.ShowDialog();
         }
     }
 }

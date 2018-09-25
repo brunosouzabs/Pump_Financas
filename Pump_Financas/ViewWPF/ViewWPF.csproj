@@ -151,6 +151,15 @@
   <ItemGroup>
     <Resource Include="Icons\IconHelp.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Controller\Controller.csproj">
+      <Project>{99E0F35F-879C-4C64-AADC-0BD44B189352}</Project>
+      <Name>Controller</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Model\Model.csproj">
+      <Project>{DB695E7F-A889-49E8-B409-BAD46E2ACC96}</Project>
+      <Name>Model</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

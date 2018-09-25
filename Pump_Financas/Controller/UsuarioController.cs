@@ -5,12 +5,12 @@ using System.Linq;
 
 namespace Controller
 {
-    class UsuarioController
+    public class UsuarioController
     {
         Contexto contexto = new Contexto();
 
         //INSERIR NOVO USUÁRIO
-        void Inserir(Usuario u)
+        public void Inserir(Usuario u)
         {
             contexto.Usuarios.Add(u);
             contexto.SaveChanges();

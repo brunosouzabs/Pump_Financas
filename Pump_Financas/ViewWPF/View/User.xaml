@@ -30,6 +30,8 @@
         <CheckBox x:Name="cbxMostrar2" Content="Mostrar" HorizontalAlignment="Left" Margin="346,266,0,0" VerticalAlignment="Top"/>
         <PasswordBox x:Name="pwbSenha" HorizontalAlignment="Left" Margin="131,213,0,0" VerticalAlignment="Top" Width="211" Height="25" Opacity="0.7"/>
         <PasswordBox x:Name="pwbConfirmaSenha" HorizontalAlignment="Left" Margin="131,258,0,0" VerticalAlignment="Top" Width="211" Height="25"/>
+        <Button x:Name="btnSalvarUser" Content="Salvar" HorizontalAlignment="Left" Margin="130,348,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvarUser_Click"/>
+        <Label x:Name="lblConfirmacaoUser" Content="" HorizontalAlignment="Left" Margin="131,283,0,0" VerticalAlignment="Top" Width="211" Height="30"/>
 
     </Grid>
 </Window>
