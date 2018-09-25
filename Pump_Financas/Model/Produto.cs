@@ -13,7 +13,6 @@ namespace Model
         public int ProdutoID { get; set; }
 
         [Required]
-        [StringLength(30)]
         public int Codigo { get; set; }
 
         public string Nome { get; set; }

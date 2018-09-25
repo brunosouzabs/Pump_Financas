@@ -15,7 +15,7 @@ namespace Model.DAL
         }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<Produto> Produtos { get; set; }
-        public DbSet<Produto> Perfil { get; set; }
-        public DbSet<Produto> Categoria { get; set; }
+        public DbSet<Perfil> Perfil { get; set; }
+        public DbSet<Categoria> Categoria { get; set; }
     }
 }
