@@ -18,17 +18,17 @@ namespace ViewWPF
     /// <summary>
     /// Interação lógica para MainWindow.xam
     /// </summary>
-    public partial class Login : Window
+    public partial class MainWindow : Window
     {
-        public Login()
+        public MainWindow()
         {
             InitializeComponent();
        
         }
 
-        private void InitializeComponent()
+        private void btnCadastroUser_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+           
         }
     }
 }
