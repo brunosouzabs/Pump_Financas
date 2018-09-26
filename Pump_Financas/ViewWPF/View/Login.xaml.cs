@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using Model.DAL;
 using System;
 using System.Collections.Generic;
@@ -32,7 +33,10 @@ namespace ViewWPF
 
         private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
-           
+            if(new UsuarioController().BuscarPorEmail(txtLogin.Text) == null)
+            {
+                MessageBox.Show("Usuário não encontrado");
+            }
         }
 
         private void btnCadastrarNovoUser_Click(object sender, RoutedEventArgs e)

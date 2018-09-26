@@ -23,15 +23,15 @@ namespace Controller
         }
 
         //BUSCA USUÁRIOS POR ID
-        Usuario BuscarPorID(int id)
+        public Usuario BuscarPorEmail(string email)
         {
-            return contexto.Usuarios.Find(id);
+            return contexto.Usuarios.Find(email);
         }
 
         //EXLUIR USUÁRIOS
-        void Excluir(int id)
+        void Excluir(string email)
         {
-            Usuario pExcluir = BuscarPorID(id);
+            Usuario pExcluir = BuscarPorEmail(email);
 
             if (pExcluir != null)
             {
@@ -42,9 +42,9 @@ namespace Controller
         }
 
         //EDITAR USUÁRIOS
-        void Editar(int id, Usuario novoDadosUsuario)
+        void Editar(string email, Usuario novoDadosUsuario)
         {
-            Usuario usuarioAntigo = BuscarPorID(id);
+            Usuario usuarioAntigo = BuscarPorEmail(email);
 
             if (usuarioAntigo != null)
             {
