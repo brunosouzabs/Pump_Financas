@@ -30,7 +30,6 @@ namespace ViewWPF
 
         private void btnSalvarUser_Click(object sender, RoutedEventArgs e)
         {
-            UsuarioController usuariocontroller = new UsuarioController();
 
             Usuario u = new Usuario
             {
@@ -38,15 +37,39 @@ namespace ViewWPF
                 Email = txtEmail.Text,
                 Status = true
             };
-            if (pwbSenha.Password == pwbConfirmaSenha.Password)
+            switch (cbxPerfil.Text)
+            {
+                case "Administrador":
+                    u.Perfil = 1;
+                break;
+                case "Usuário Padrão":
+                    u.Perfil = 2;
+                    break;
+                case "Convidado":
+                    u.Perfil = 3;
+                    break;
+            }
+            if (pwbSenha.Password != pwbConfirmaSenha.Password)
+            {              
+                pwbSenha.Clear();
+                pwbConfirmaSenha.Clear();
+                MessageBox.Show("Senhas não conferem");
+            }
+            else
             {
                 u.Senha = pwbSenha.Password;
             }
+                
+            if(txtNome.Text=="" || txtEmail.Text=="" || cbxPerfil.Text=="" || pwbSenha.Password=="" || pwbConfirmaSenha.Password == "")
+            {
+                MessageBox.Show("Preencha todos os campos");
+            }
             else
-                lblConfirmacaoUser.Content = "Senhas não conferem";
-
-            contexto.Usuarios.Add(u);
-            contexto.SaveChanges();
+            {
+                new UsuarioController().Inserir(u);
+                this.Close();
+            }
+            
         }
 
     }
