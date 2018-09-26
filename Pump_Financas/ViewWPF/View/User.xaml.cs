@@ -1,4 +1,5 @@
-﻿using Model;
+﻿using Controller;
+using Model;
 using Model.DAL;
 using System.Windows;
 using System.Windows.Controls;
@@ -29,11 +30,12 @@ namespace ViewWPF
 
         private void btnSalvarUser_Click(object sender, RoutedEventArgs e)
         {
+            UsuarioController usuariocontroller = new UsuarioController();
+
             Usuario u = new Usuario
             {
                 Nome = txtNome.Text,
                 Email = txtEmail.Text,
-                Perfil = 1,
                 Status = true
             };
             if (pwbSenha.Password == pwbConfirmaSenha.Password)
