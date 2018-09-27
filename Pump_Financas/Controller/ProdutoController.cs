@@ -13,74 +13,87 @@ namespace Controller
         Contexto contexto = new Contexto();
 
         //INSERIR NOVO PRODUTO
-        public void Inserir(Produto p)
+        public void Inserir(Produto u)
         {
-            contexto.Produtos.Add(p);
+            contexto.Produtos.Add(u);
             contexto.SaveChanges();
         }
 
         //LISTAS PRODUTO
-        List<Produto> ListarTodosProdutos()
+        public List<Produto> ListarTodosProdutos()
         {
             return contexto.Produtos.ToList();
         }
 
-        //BUSCA PRODUTO POR ID
-        Produto BuscarPorID(int id)
+        //BUSCA PRODUTO POR Nome
+        public Produto BuscarPorNome(string nome)
         {
-            return contexto.Produtos.Find(id);
-        }
-
-        //EXLUIR PRODUTO
-        void Excluir(int id)
-        {
-            Produto pExcluir = BuscarPorID(id);
-
-            if (pExcluir != null)
+            List<Produto> produtos = new ProdutoController().ListarTodosProdutos();
+            foreach (Produto item in produtos)
             {
+                if (item.Nome == nome)
+                {
+                    return item;
+                }
+            }
+            return null;
+        }
+        //EXLUIR PRODUTO
+        public void Excluir(string nome)
+        {
+            Produto uExcluir = BuscarPorNome(nome);
 
-                contexto.Produtos.Remove(pExcluir);
+            if (uExcluir != null)
+            {
+                contexto.Produtos.Remove(contexto.Produtos.Find(uExcluir.ProdutoID));
                 contexto.SaveChanges();
             }
         }
 
         //EDITAR PRODUTO
-        void Editar(int id, Produto novoDadosProduto)
+        public void Editar(string nome, Produto novoDadosProduto)
         {
-            Produto produtoAntigo = BuscarPorID(id);
+            Produto produtoAntigo = BuscarPorNome(nome);
 
             if (produtoAntigo != null)
             {
-                produtoAntigo.CodInterno = novoDadosProduto.CodInterno;
                 produtoAntigo.Nome = novoDadosProduto.Nome;
-                produtoAntigo.Categoria = novoDadosProduto.Categoria;
+                produtoAntigo.CodInterno = novoDadosProduto.CodInterno;
                 produtoAntigo.Valor = novoDadosProduto.Valor;
                 produtoAntigo.Quantidade = novoDadosProduto.Quantidade;
                 produtoAntigo.Status = novoDadosProduto.Status;
-                
-
-
-                contexto.Entry(produtoAntigo).State =
-                System.Data.Entity.EntityState.Modified;
+                contexto.Entry(produtoAntigo).State = System.Data.Entity.EntityState.Modified;
                 contexto.SaveChanges();
             }
         }
 
-        //PESQUISAR PRODUTOS POR NOME
-        List<Produto> PesquisarPorNome(string Nome)
+        //PESQUISAR PRODUTO POR NOME
+        public List<Produto> PesquisarPorNome(string nome)
         {
-            var lista = from p in contexto.Produtos where p.Nome == Nome select p;
+            var lista = from p in contexto.Produtos where p.Nome == nome select p;
             return lista.ToList();
         }
 
+        //RETORNA O NUMERO TOTAL DE PRODUTOS DIFERENTES EM ESTOQUE
         public int TotalProdutos()
         {
+            int count = 0;
             List<Produto> produtos = new ProdutoController().ListarTodosProdutos();
-            int count=0;
             foreach (Produto item in produtos)
             {
-                count =+ 1;
-                return count;
+                count += 1;
+            }
+            return count;
+        }
+
+        //RETORNAR O VALOR TOTAL DE TODOS OS PRODUTOS JUNTOS EM ESTOQUE
+        public decimal ValorTotalEstoque()
+        {
+            decimal count = 0;
+            List<Produto> produtos = new ProdutoController().ListarTodosProdutos();
+            foreach (Produto item in produtos)
+            {
+                count += item.Valor;
             }
             return count;
         }

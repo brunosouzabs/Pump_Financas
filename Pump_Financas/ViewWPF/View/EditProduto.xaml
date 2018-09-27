@@ -10,17 +10,21 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <Label x:Name="lblEditProduto" Content="Produto" HorizontalAlignment="Left" Margin="55,84,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <ComboBox x:Name="cbxEditProduto" HorizontalAlignment="Left" Margin="124,90,0,0" VerticalAlignment="Top" Width="290"/>
+        <Label x:Name="lblEditProduto" Content="Produto" HorizontalAlignment="Left" Margin="53,90,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="cbxEditProduto" HorizontalAlignment="Left" Margin="124,90,0,0" VerticalAlignment="Top" Width="218" Loaded="cbxEditProduto_Loaded"/>
         <Label x:Name="lblTituloEditProduto" Content="Edição de Produtos" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
-        <Label x:Name="lblEditQuant" Content="Quantidade" HorizontalAlignment="Left" Margin="33,142,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="txtEditQuantidade" HorizontalAlignment="Left" Height="23" Margin="124,142,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Opacity="0.7"/>
-        <Label Content="Valor" HorizontalAlignment="Left" Margin="76,193,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="txtEditValor" HorizontalAlignment="Left" Height="23" Margin="124,199,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Opacity="0.7"/>
-        <CheckBox x:Name="cbxEditProdAtivo" Content="Ativo" HorizontalAlignment="Left" Margin="339,227,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="btnSaveEditProd" Content="Salvar" HorizontalAlignment="Left" Margin="129,270,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveEdit_Click"/>
-        <Button x:Name="btnCancelEditProd" Content="Cancelar" HorizontalAlignment="Left" Margin="339,270,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelEdit_Click"/>
-        <Button x:Name="btnExcluirProd" Content="Excluir" HorizontalAlignment="Left" Margin="209,270,0,0" VerticalAlignment="Top" Width="75" Click="btnExcluirUser_Click"/>
+        <Label x:Name="lblEditQuant" Content="Quantidade" HorizontalAlignment="Left" Margin="32,158,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtEditQuantidade" HorizontalAlignment="Left" Height="23" Margin="124,158,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="290" Opacity="0.7"/>
+        <Label x:Name="lblValorEdit" Content="Valor" HorizontalAlignment="Left" Margin="73,195,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtEditValor" HorizontalAlignment="Left" Height="23" Margin="124,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Opacity="0.7"/>
+        <CheckBox x:Name="cbxEditProdAtivo" Content="Ativo" HorizontalAlignment="Left" Margin="347,232,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnSaveEditProd" Content="Salvar" HorizontalAlignment="Left" Margin="124,272,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnCancelEditProd" Content="Cancelar" HorizontalAlignment="Left" Margin="347,272,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnExcluirProd" Content="Excluir" HorizontalAlignment="Left" Margin="205,272,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnBuscarProd" Content="Buscar" HorizontalAlignment="Left" Margin="347,92,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscarProd_Click"/>
+        <Label x:Name="lblCodIntEdit" Content="Codigo Interno" HorizontalAlignment="Left" Margin="9,124,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtCodInt" HorizontalAlignment="Left" Height="23" Margin="124,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Opacity="0.7"/>
+        <Viewbox HorizontalAlignment="Left" Height="100" Margin="158,223,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

@@ -14,6 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 using System.Text.RegularExpressions;
+using ViewWPF.View;
 
 namespace ViewWPF
 {
@@ -36,19 +37,18 @@ namespace ViewWPF
         {
             Produto p = new Produto
             {
-               Nome = txtNome.Text,
-               CodInterno = txtCodigo.Text,
-               Status = true         
+                Nome = txtNome.Text,
+                CodInterno = txtCodigo.Text,
+                Status = true,
             };
-            if(txtValor.Text == "")
+            if (txtQuantidade.Text != "")
             {
-                p.Valor = 0;
+                p.Quantidade = Convert.ToInt32(txtQuantidade.Text);
             }
-            if(txtQuantidade.Text == "")
+            if (txtValor.Text != "")
             {
-                p.Quantidade = 0;
+                p.Valor = Convert.ToDecimal(txtValor.Text);
             }
-            
             if (txtNome.Text=="" || txtCodigo.Text =="" || txtValor.Text == "" || txtQuantidade.Text == "")
             {
                 MessageBox.Show("Preencha todos os campos");
@@ -56,16 +56,23 @@ namespace ViewWPF
             else
             {
                 new ProdutoController().Inserir(p);
+                Home home = new Home();
                 this.Close();
-            }
-
-                
+                home.ShowDialog();
+            }         
         }
 
         private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
         {
                 Regex regex = new Regex("[^0-9]+");
                 e.Handled = regex.IsMatch(e.Text);
+        }
+
+        private void btnEditar_Click(object sender, RoutedEventArgs e)
+        {
+            EditProduto editProd = new EditProduto();
+            this.Close();
+            editProd.ShowDialog();
         }
     }
 }
