@@ -14,27 +14,28 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="25" Margin="130,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Background="White" Opacity="0.7" AutomationProperties.IsColumnHeader="True"/>
-        <Label x:Name="lblNome" Content="Nome Completo" HorizontalAlignment="Left" Margin="14,79,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="txtEmail" HorizontalAlignment="Left" Height="25" Margin="130,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Opacity="0.7"/>
-        <Label x:Name="lblEmail" Content="E-mail" HorizontalAlignment="Left" Margin="79,124,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <Label x:Name="lblPerfil" Content="Perfil" HorizontalAlignment="Left" Margin="85,167,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <ComboBox x:Name="cbxPerfil" HorizontalAlignment="Left" Margin="130,167,0,0" VerticalAlignment="Top" Width="422" Opacity="0.7" Height="25" SelectionChanged="cbxPerfil_SelectionChanged">
-            <ComboBoxItem x:Name="Administrador" Content="Administrador" HorizontalAlignment="Left" Width="420.8"/>
-            <ComboBoxItem x:Name="Usuário_Padrão" Content="Usuário Padrão" HorizontalAlignment="Left" Width="420.8"/>
-            <ComboBoxItem x:Name="Usuário_Convidado" Content="Convidado" HorizontalAlignment="Left" Width="420.8"/>
-        </ComboBox>
-        <Label x:Name="lblSenha" Content="Senha" HorizontalAlignment="Left" Margin="82,213,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <Label x:Name="lblConfirmaSenha" Content="Confirmar Senha                " HorizontalAlignment="Left" Margin="13,258,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <CheckBox x:Name="cbxMostrar1" Content="Mostrar" HorizontalAlignment="Left" Margin="346,221,0,0" VerticalAlignment="Top"/>
-        <CheckBox x:Name="cbxMostrar2" Content="Mostrar" HorizontalAlignment="Left" Margin="346,266,0,0" VerticalAlignment="Top"/>
-        <PasswordBox x:Name="pwbSenha" HorizontalAlignment="Left" Margin="131,213,0,0" VerticalAlignment="Top" Width="211" Height="25" Opacity="0.7"/>
-        <PasswordBox x:Name="pwbConfirmaSenha" HorizontalAlignment="Left" Margin="131,258,0,0" VerticalAlignment="Top" Width="211" Height="25"/>
-        <Button x:Name="btnSalvarUser" Content="Salvar" HorizontalAlignment="Left" Margin="130,348,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvarUser_Click"/>
-        <Button x:Name="btnCancelarUser" Content="Cancelar" HorizontalAlignment="Left" Margin="477,348,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelarUser_Click"/>
-        <Button x:Name="btnEditarUser" Content="Editar" HorizontalAlignment="Left" Margin="225,348,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvarUser_Click"/>
-        <Label x:Name="lblNome_Copy" Content="Buscar" HorizontalAlignment="Left" Margin="73,37,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
-        <ComboBox x:Name="cbxSelectUser" HorizontalAlignment="Left" Margin="130,37,0,0" VerticalAlignment="Top" Width="212" Loaded="cbxSelectUser_Loaded"/>
+        <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="25" Margin="130,123,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="422" Background="White" Opacity="0.7" AutomationProperties.IsColumnHeader="True"/>
+        <Label x:Name="lblNome" Content="Nome Completo" HorizontalAlignment="Left" Margin="14,123,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblSenha" Content="Senha" HorizontalAlignment="Left" Margin="81,167,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="lblConfirmaSenha" Content="Confirmar Senha                " HorizontalAlignment="Left" Margin="12,212,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <PasswordBox x:Name="pwbSenha" HorizontalAlignment="Left" Margin="130,167,0,0" VerticalAlignment="Top" Width="211" Height="25" Opacity="0.7"/>
+        <PasswordBox x:Name="pwbConfirmaSenha" HorizontalAlignment="Left" Margin="130,212,0,0" VerticalAlignment="Top" Width="211" Height="25"/>
+        <Button x:Name="btnSalvarUser" Content="Salvar" HorizontalAlignment="Left" Margin="130,270,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvarUser_Click"/>
+        <Button x:Name="btnCancelarUser" Content="Cancelar" HorizontalAlignment="Left" Margin="212,270,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelarUser_Click"/>
+        <Button x:Name="btnEditarUser" Content="Editar" HorizontalAlignment="Left" Margin="294,271,0,0" VerticalAlignment="Top" Width="75" Click="btnEditarUser_Click" RenderTransformOrigin="0.547,0.599">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.369"/>
+                    <TranslateTransform X="-0.012" Y="0.022"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <ComboBox x:Name="cbxSelectUser" HorizontalAlignment="Left" Margin="265,312,0,0" VerticalAlignment="Top" Width="205"/>
+        <Label x:Name="lblNome_Copy1" Content="Usuário" HorizontalAlignment="Left" Margin="70,79,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="25" Margin="130,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Background="White" Opacity="0.7" AutomationProperties.IsColumnHeader="True"/>
+        <CheckBox x:Name="ckbAdm" Content="Administrador" HorizontalAlignment="Left" Margin="130,246,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>
 
     </Grid>
 </Window>

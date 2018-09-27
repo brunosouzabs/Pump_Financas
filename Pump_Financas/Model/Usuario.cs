@@ -11,11 +11,15 @@ namespace Model
     public class Usuario
     {
         [Key]
+        public int ID { get; set; }
+
+        public string User { get; set; }
+
         public string Email { get; set; }
 
         public string Nome { get; set; }
 
-        public int Perfil { get; set; }
+        public bool Perfil { get; set; }
 
         public string Senha { get; set; }
 

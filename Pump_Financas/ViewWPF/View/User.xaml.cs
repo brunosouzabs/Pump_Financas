@@ -33,21 +33,13 @@ namespace ViewWPF
         {
             Usuario u = new Usuario
             {
+                User = txtUser.Text,
                 Nome = txtNome.Text,
-                Email = txtEmail.Text,
                 Status = true
             };
-            switch (cbxPerfil.Text)
+            if (ckbAdm.IsEnabled)
             {
-                case "Administrador":
-                    u.Perfil = 1;
-                break;
-                case "Usuário Padrão":
-                    u.Perfil = 2;
-                    break;
-                case "Convidado":
-                    u.Perfil = 3;
-                    break;
+                u.Perfil = true;
             }
             if (pwbSenha.Password != pwbConfirmaSenha.Password)
             {              
@@ -59,15 +51,15 @@ namespace ViewWPF
             {
                 u.Senha = pwbSenha.Password;
             }           
-            if(txtNome.Text=="" || txtEmail.Text=="" || cbxPerfil.Text=="" || pwbSenha.Password=="" || pwbConfirmaSenha.Password == "")
+            if(txtNome.Text=="" || pwbSenha.Password=="" || pwbConfirmaSenha.Password == "")
             {
                 MessageBox.Show("Preencha todos os campos");
             }
             else
             {
-                if(new UsuarioController().BuscarPorEmail(u.Email) != null)
+                if(new UsuarioController().BuscarPorUser(u.User) != null)
                 {
-                    txtEmail.Clear();
+                    txtUser.Clear();
                     MessageBox.Show("Usuário já existe");
                 }
                 else
@@ -94,5 +86,15 @@ namespace ViewWPF
             }
             
 ;        }
+
+        private void CheckBox_Checked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void btnEditarUser_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
  }

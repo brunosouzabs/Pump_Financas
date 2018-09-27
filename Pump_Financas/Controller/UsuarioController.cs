@@ -24,21 +24,21 @@ namespace Controller
         }
 
         //BUSCA USUÁRIOS POR ID
-        public Usuario BuscarPorEmail(string email)
+        public Usuario BuscarPorUser(string user)
         {
-            return contexto.Usuarios.Find(email);
+            return contexto.Usuarios.Find(user);
         }
 
-        public Usuario ValidarLogin(string email, string senha)
+        public Usuario ValidarLogin(string user, string senha)
         {
-            if (new UsuarioController().BuscarPorEmail(email) == null)
+            if (new UsuarioController().BuscarPorUser(user) == null)
             {
                 return null;
             }
             else
             {
                 Usuario u = new Usuario();
-                u = BuscarPorEmail(email);
+                u = BuscarPorUser(user);
                 if (u.Senha == senha)
                 {
                     return u;
@@ -51,9 +51,9 @@ namespace Controller
 
         }
         //EXLUIR USUÁRIOS
-        void Excluir(string email)
+        void Excluir(string user)
         {
-            Usuario pExcluir = BuscarPorEmail(email);
+            Usuario pExcluir = BuscarPorUser(user);
 
             if (pExcluir != null)
             {
@@ -64,9 +64,9 @@ namespace Controller
         }
 
         //EDITAR USUÁRIOS
-        void Editar(string email, Usuario novoDadosUsuario)
+        void Editar(string user, Usuario novoDadosUsuario)
         {
-            Usuario usuarioAntigo = BuscarPorEmail(email);
+            Usuario usuarioAntigo = BuscarPorUser(user);
 
             if (usuarioAntigo != null)
             {
