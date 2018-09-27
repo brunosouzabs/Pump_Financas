@@ -32,7 +32,6 @@
                 </TransformGroup>
             </Button.RenderTransform>
         </Button>
-        <ComboBox x:Name="cbxSelectUser" HorizontalAlignment="Left" Margin="265,312,0,0" VerticalAlignment="Top" Width="205"/>
         <Label x:Name="lblNome_Copy1" Content="Usuário" HorizontalAlignment="Left" Margin="70,79,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="txtUser" HorizontalAlignment="Left" Height="25" Margin="130,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="212" Background="White" Opacity="0.7" AutomationProperties.IsColumnHeader="True"/>
         <CheckBox x:Name="ckbAdm" Content="Administrador" HorizontalAlignment="Left" Margin="130,246,0,0" VerticalAlignment="Top" Checked="CheckBox_Checked"/>

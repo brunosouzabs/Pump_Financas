@@ -36,6 +36,7 @@ namespace ViewWPF
             if(new UsuarioController().ValidarLogin(txtLogin.Text, pwbLogin.Password) != null)
             {
                 Home home = new Home();
+                this.Close();
                 home.ShowDialog();
             }
             else
@@ -49,6 +50,7 @@ namespace ViewWPF
         private void btnCadastrarNovoUser_Click(object sender, RoutedEventArgs e)
         {
             User user = new User();
+            this.Close();
             user.ShowDialog();
         }
     }

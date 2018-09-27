@@ -66,14 +66,19 @@ namespace ViewWPF
                 else
                 {
                     new UsuarioController().Inserir(u);
+                    MessageBox.Show("Usuário cadastrado com sucesso!");
+                    MainWindow login = new MainWindow();
                     this.Close();
+                    login.ShowDialog();
                 }
             }
             
         }
         private void btnCancelarUser_Click(object sender, RoutedEventArgs e)
         {
+            MainWindow login = new MainWindow();
             this.Close();
+            login.ShowDialog();
         }
 
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
@@ -84,6 +89,7 @@ namespace ViewWPF
         private void btnEditarUser_Click(object sender, RoutedEventArgs e)
         {
             EditUser edituser = new EditUser();
+            this.Close();
             edituser.ShowDialog();
         }
     }

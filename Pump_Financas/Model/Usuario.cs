@@ -15,8 +15,6 @@ namespace Model
 
         public string User { get; set; }
 
-        public string Email { get; set; }
-
         public string Nome { get; set; }
 
         public bool Perfil { get; set; }

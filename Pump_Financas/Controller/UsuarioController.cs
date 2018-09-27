@@ -59,27 +59,25 @@ namespace Controller
 
         }
         //EXLUIR USUÁRIOS
-        void Excluir(string user)
+        public void Excluir(string user)
         {
-            Usuario pExcluir = BuscarPorUser(user);
+            Usuario uExcluir = BuscarPorUser(user);
 
-            if (pExcluir != null)
+            if (uExcluir != null)
             {
-
-                contexto.Usuarios.Remove(pExcluir);
+                contexto.Usuarios.Remove(contexto.Usuarios.Find(uExcluir.ID));
                 contexto.SaveChanges();
             }
         }
 
         //EDITAR USUÁRIOS
-        void Editar(string user, Usuario novoDadosUsuario)
+        public void Editar(string user, Usuario novoDadosUsuario)
         {
             Usuario usuarioAntigo = BuscarPorUser(user);
 
             if (usuarioAntigo != null)
             {
                 usuarioAntigo.Nome = novoDadosUsuario.Nome;
-                usuarioAntigo.Email = novoDadosUsuario.Email;
                 usuarioAntigo.Perfil = novoDadosUsuario.Perfil;
 
                 contexto.Entry(usuarioAntigo).State =
