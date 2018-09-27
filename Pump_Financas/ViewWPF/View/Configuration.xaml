@@ -17,7 +17,7 @@
         <Label x:Name="lblCadastroUser" Content="Cadastro de Usuários" HorizontalAlignment="Left" Margin="154,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="OCR A Std"/>
         <Label x:Name="lblHelpConfig" Content="Help" HorizontalAlignment="Left" Margin="732,542,0,0" VerticalAlignment="Top" FontFamily="OCR A Std" FontSize="14" Width="50" Height="25"/>
         <Label x:Name="lblCadastroProd" Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="154,281,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="OCR A Std"/>
-        <Button x:Name="btnCadastroUser" Content="C" HorizontalAlignment="Left" Margin="84,138,0,0" VerticalAlignment="Top" Width="70" Height="70   " FontSize="36" FontFamily="OCR A Std" FontWeight="Bold"/>
+        <Button x:Name="btnCadastroUser" Content="C" HorizontalAlignment="Left" Margin="84,138,0,0" VerticalAlignment="Top" Width="70" Height="70   " FontSize="36" FontFamily="OCR A Std" FontWeight="Bold" Click="btnCadastroUser_Click_1"/>
         <Button x:Name="btnCadastroProd" Content="P" HorizontalAlignment="Left" Margin="84,258,0,0" VerticalAlignment="Top" Width="70" Height="70   " FontSize="36" FontFamily="OCR A Std" FontWeight="Bold" Click="btnCadastroProd_Click"/>
 
     </Grid>

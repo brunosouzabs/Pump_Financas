@@ -42,5 +42,12 @@ namespace ViewWPF
             this.Close();
             prod.ShowDialog();
         }
+
+        private void btnCadastroUser_Click_1(object sender, RoutedEventArgs e)
+        {
+            User user = new User();
+            this.Close();
+            user.ShowDialog();
+        }
     }
 }
