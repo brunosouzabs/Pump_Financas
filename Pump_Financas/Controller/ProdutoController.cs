@@ -51,7 +51,7 @@ namespace Controller
 
             if (produtoAntigo != null)
             {
-                produtoAntigo.Codigo = novoDadosProduto.Codigo;
+                produtoAntigo.CodInterno = novoDadosProduto.CodInterno;
                 produtoAntigo.Nome = novoDadosProduto.Nome;
                 produtoAntigo.Categoria = novoDadosProduto.Categoria;
                 produtoAntigo.Valor = novoDadosProduto.Valor;

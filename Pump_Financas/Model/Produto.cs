@@ -13,17 +13,15 @@ namespace Model
         public int ProdutoID { get; set; }
 
         [Required]
-        public int Codigo { get; set; }
-
         public string Nome { get; set; }
+
+        public string CodInterno { get; set; }        
 
         public int Categoria { get; set; }
 
         public decimal Valor { get; set; }
 
-        public int Quantidade { get; set; }
-
-        public string Senha { get; set; }
+        public int Quantidade { get; set; }       
 
         public bool Status { get; set; }
     }

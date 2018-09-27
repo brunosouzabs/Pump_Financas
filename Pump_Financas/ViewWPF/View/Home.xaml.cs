@@ -23,5 +23,11 @@ namespace ViewWPF
         {
             InitializeComponent();
         }
+
+        private void btnCadastroProd_Click(object sender, RoutedEventArgs e)
+        {
+            Product product = new Product();
+            product.ShowDialog();
+        }
     }
 }
