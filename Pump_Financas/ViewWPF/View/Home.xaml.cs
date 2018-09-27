@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using Controller;
+using System.Windows;
 
 namespace ViewWPF
 {
@@ -24,6 +25,16 @@ namespace ViewWPF
             this.Close();
             login.ShowDialog();
             
+        }
+
+        private void lbltotresult_Loaded(object sender, RoutedEventArgs e)
+        {
+            lbltotresult.Content = new ProdutoController().TotalProdutos();
+        }
+
+        private void btnConfig_Click(object sender, RoutedEventArgs e)
+        {
+        
         }
     }
 }

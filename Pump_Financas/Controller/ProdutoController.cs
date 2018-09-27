@@ -72,6 +72,18 @@ namespace Controller
             var lista = from p in contexto.Produtos where p.Nome == Nome select p;
             return lista.ToList();
         }
+
+        public int TotalProdutos()
+        {
+            List<Produto> produtos = new ProdutoController().ListarTodosProdutos();
+            int count=0;
+            foreach (Produto item in produtos)
+            {
+                count =+ 1;
+                return count;
+            }
+            return count;
+        }
     }
 }
 
