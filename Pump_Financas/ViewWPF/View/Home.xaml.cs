@@ -68,5 +68,12 @@ namespace ViewWPF
                 lblCodInterno.Content = produto.CodInterno;
             }
         }
+
+        private void btnConfig_Click_1(object sender, RoutedEventArgs e)
+        {
+            Configuration config = new Configuration();
+            this.Close();
+            config.ShowDialog();
+        }
     }
 }

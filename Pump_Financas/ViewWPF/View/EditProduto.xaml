@@ -18,9 +18,9 @@
         <Label x:Name="lblValorEdit" Content="Valor" HorizontalAlignment="Left" Margin="73,195,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <TextBox x:Name="txtEditValor" HorizontalAlignment="Left" Height="23" Margin="124,195,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Opacity="0.7"/>
         <CheckBox x:Name="cbxEditProdAtivo" Content="Ativo" HorizontalAlignment="Left" Margin="347,232,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="btnSaveEditProd" Content="Salvar" HorizontalAlignment="Left" Margin="124,272,0,0" VerticalAlignment="Top" Width="75" />
-        <Button x:Name="btnCancelEditProd" Content="Cancelar" HorizontalAlignment="Left" Margin="347,272,0,0" VerticalAlignment="Top" Width="75" />
-        <Button x:Name="btnExcluirProd" Content="Excluir" HorizontalAlignment="Left" Margin="205,272,0,0" VerticalAlignment="Top" Width="75" />
+        <Button x:Name="btnSaveEditProd" Content="Salvar" HorizontalAlignment="Left" Margin="124,272,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveEditProd_Click" />
+        <Button x:Name="btnCancelEditProd" Content="Cancelar" HorizontalAlignment="Left" Margin="347,272,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelEditProd_Click" />
+        <Button x:Name="btnExcluirProd" Content="Excluir" HorizontalAlignment="Left" Margin="205,272,0,0" VerticalAlignment="Top" Width="75" Click="btnExcluirProd_Click" />
         <Button x:Name="btnBuscarProd" Content="Buscar" HorizontalAlignment="Left" Margin="347,92,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscarProd_Click"/>
         <Label x:Name="lblCodIntEdit" Content="Codigo Interno" HorizontalAlignment="Left" Margin="9,124,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <TextBox x:Name="txtCodInt" HorizontalAlignment="Left" Height="23" Margin="124,124,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="290" Opacity="0.7"/>

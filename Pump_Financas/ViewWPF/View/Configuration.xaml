@@ -13,14 +13,12 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <Button x:Name="btnCadastroUser" Content="" HorizontalAlignment="Left" Margin="84,113,0,0" VerticalAlignment="Top" Width="75" Height="75" BorderBrush="{x:Null}" Click="btnCadastroUser_Click">
-            <Button.Background>
-                <ImageBrush ImageSource="/ViewWPF;component/Icons/iconLogin.png"/>
-            </Button.Background>
-        </Button>
-        <Button x:Name="btnMenuConfig" Content="Menu" HorizontalAlignment="Left" Margin="10,529,0,0" VerticalAlignment="Top" Width="150" Height="30" FontFamily="OCR A Std" FontSize="18"/>
-        <Label Content="Cadastro de Usuários" HorizontalAlignment="Left" Margin="164,138,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="OCR A Std"/>
+        <Button x:Name="btnMenuConfig" Content="Menu" HorizontalAlignment="Left" Margin="10,529,0,0" VerticalAlignment="Top" Width="150" Height="30" FontFamily="OCR A Std" FontSize="18" Click="btnMenuConfig_Click"/>
+        <Label x:Name="lblCadastroUser" Content="Cadastro de Usuários" HorizontalAlignment="Left" Margin="154,155,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="OCR A Std"/>
         <Label x:Name="lblHelpConfig" Content="Help" HorizontalAlignment="Left" Margin="732,542,0,0" VerticalAlignment="Top" FontFamily="OCR A Std" FontSize="14" Width="50" Height="25"/>
+        <Label x:Name="lblCadastroProd" Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="154,281,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="20" FontFamily="OCR A Std"/>
+        <Button x:Name="btnCadastroUser" Content="C" HorizontalAlignment="Left" Margin="84,138,0,0" VerticalAlignment="Top" Width="70" Height="70   " FontSize="36" FontFamily="OCR A Std" FontWeight="Bold"/>
+        <Button x:Name="btnCadastroProd" Content="P" HorizontalAlignment="Left" Margin="84,258,0,0" VerticalAlignment="Top" Width="70" Height="70   " FontSize="36" FontFamily="OCR A Std" FontWeight="Bold" Click="btnCadastroProd_Click"/>
 
     </Grid>
 </Window>

@@ -28,5 +28,19 @@ namespace ViewWPF
         {
 
         }
+
+        private void btnMenuConfig_Click(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            this.Close();
+            home.Show();
+        }
+
+        private void btnCadastroProd_Click(object sender, RoutedEventArgs e)
+        {
+            Product prod = new Product();
+            this.Close();
+            prod.ShowDialog();
+        }
     }
 }
