@@ -12,7 +12,7 @@
         </Grid.Background>
         <Label x:Name="lblTituloEditUser" Content="Edição de Usuários" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
         <Label x:Name="lblNomeCompleto" Content="Nome Completo" HorizontalAlignment="Left" Margin="12,127,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <TextBox HorizontalAlignment="Left" Height="25" Margin="135,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="307" Opacity="0.7"/>
+        <TextBox x:Name="txtNomeEdit" HorizontalAlignment="Left" Height="25" Margin="135,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="307" Opacity="0.7"/>
         <Label x:Name="lblEditPassUser" Content="Senha" HorizontalAlignment="Left" Margin="80,183,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <PasswordBox x:Name="pwdEditPassUser" HorizontalAlignment="Left" Margin="135,183,0,0" VerticalAlignment="Top" Width="307" Height="25" Opacity="0.7"/>
         <Label x:Name="lblEditConfirmPassUser" Content="Confirmar Senha" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
@@ -20,9 +20,10 @@
         <CheckBox x:Name="cbxEditAdmin" Content="Administrador" HorizontalAlignment="Left" Margin="135,276,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <CheckBox x:Name="cbxEditStatus" Content="Ativo" HorizontalAlignment="Left" Margin="299,276,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <Label x:Name="lblEditUser" Content="Usuário" HorizontalAlignment="Left" Margin="69,82,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <ComboBox x:Name="cbxSelectUser" HorizontalAlignment="Left" Margin="135,88,0,0" VerticalAlignment="Top" Width="205"/>
-        <Button x:Name="btnSaveEdit" Content="Salvar" HorizontalAlignment="Left" Margin="135,320,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="btnCancelEdit" Content="Cancelar" HorizontalAlignment="Left" Margin="279,320,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="cbxSelectUser" HorizontalAlignment="Left" Margin="135,88,0,0" VerticalAlignment="Top" Width="205" SelectionChanged="cbxSelectUser_SelectionChanged" Loaded="cbxSelectUser_Loaded"/>
+        <Button x:Name="btnSaveEdit" Content="Salvar" HorizontalAlignment="Left" Margin="135,320,0,0" VerticalAlignment="Top" Width="75" Click="btnSaveEdit_Click"/>
+        <Button x:Name="btnCancelEdit" Content="Cancelar" HorizontalAlignment="Left" Margin="279,320,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelEdit_Click"/>
+        <Button x:Name="btnBuscar" Content="Buscar" HorizontalAlignment="Left" Margin="345,90,0,0" VerticalAlignment="Top" Width="75" Click="btnBuscar_Click"/>
 
     </Grid>
 </Window>

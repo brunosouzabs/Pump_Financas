@@ -26,7 +26,15 @@ namespace Controller
         //BUSCA USUÁRIOS POR ID
         public Usuario BuscarPorUser(string user)
         {
-            return contexto.Usuarios.Find(user);
+            List<Usuario> usuarios = new UsuarioController().ListarTodosUsuarios();
+            foreach (Usuario item in usuarios)
+            {
+                if(item.User == user)
+                {
+                    return item;
+                }
+            }
+            return null;
         }
 
         public Usuario ValidarLogin(string user, string senha)
@@ -81,9 +89,9 @@ namespace Controller
         }
 
         //PESQUISAR USUÁRIOS POR NOME
-        public List<Usuario> PesquisarPorNome(string Nome)
+        public List<Usuario> PesquisarPorUser(string user)
         {
-            var lista = from u in contexto.Usuarios where u.Email == Nome select u;
+            var lista = from u in contexto.Usuarios where u.User == user select u;
             return lista.ToList();
         }
     }

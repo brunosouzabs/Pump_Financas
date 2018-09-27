@@ -4,6 +4,7 @@ using Model.DAL;
 using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
+using ViewWPF.View;
 
 namespace ViewWPF
 {
@@ -75,18 +76,6 @@ namespace ViewWPF
             this.Close();
         }
 
-        private void cbxSelectUser_Loaded(object sender, RoutedEventArgs e)
-        {
-
-            List<Usuario> usuarios = new UsuarioController().ListarTodosUsuarios();
-
-            foreach (Usuario item in usuarios)
-            {
-                cbxSelectUser.Items.Add(item.Nome);
-            }
-            
-;        }
-
         private void CheckBox_Checked(object sender, RoutedEventArgs e)
         {
 
@@ -94,7 +83,8 @@ namespace ViewWPF
 
         private void btnEditarUser_Click(object sender, RoutedEventArgs e)
         {
-
+            EditUser edituser = new EditUser();
+            edituser.ShowDialog();
         }
     }
  }
