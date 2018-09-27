@@ -32,7 +32,7 @@
         <PasswordBox x:Name="pwbConfirmaSenha" HorizontalAlignment="Left" Margin="131,258,0,0" VerticalAlignment="Top" Width="211" Height="25"/>
         <Button x:Name="btnSalvarUser" Content="Salvar" HorizontalAlignment="Left" Margin="130,348,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvarUser_Click"/>
         <Label x:Name="lblConfirmacaoUser" IsEnabled="True" Content="" HorizontalAlignment="Left" Margin="131,283,0,0" VerticalAlignment="Top" Width="211" Height="30"/>
-        <Button x:Name="btnSalvarUser_Copy" Content="Salvar" HorizontalAlignment="Left" Margin="267,348,0,0" VerticalAlignment="Top" Width="75" Click="btnSalvarUser_Click"/>
+        <Button x:Name="btnCancelarUser" Content="Cancelar" HorizontalAlignment="Left" Margin="267,348,0,0" VerticalAlignment="Top" Width="75" Click="btnCancelarUser_Click"/>
 
     </Grid>
 </Window>

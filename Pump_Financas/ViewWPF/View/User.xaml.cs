@@ -30,7 +30,6 @@ namespace ViewWPF
 
         private void btnSalvarUser_Click(object sender, RoutedEventArgs e)
         {
-
             Usuario u = new Usuario
             {
                 Nome = txtNome.Text,
@@ -58,8 +57,7 @@ namespace ViewWPF
             else
             {
                 u.Senha = pwbSenha.Password;
-            }
-                
+            }           
             if(txtNome.Text=="" || txtEmail.Text=="" || cbxPerfil.Text=="" || pwbSenha.Password=="" || pwbConfirmaSenha.Password == "")
             {
                 MessageBox.Show("Preencha todos os campos");
@@ -72,5 +70,9 @@ namespace ViewWPF
             
         }
 
+        private void btnCancelarUser_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

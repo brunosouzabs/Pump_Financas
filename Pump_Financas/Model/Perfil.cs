@@ -15,8 +15,9 @@ namespace Model
         [Required]
         [StringLength(30)]
         public string Nome { get; set; }
-
+    
         public bool Status { get; set; }
+
 
     }
 }
