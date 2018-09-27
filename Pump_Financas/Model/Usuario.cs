@@ -20,6 +20,5 @@ namespace Model
         public string Senha { get; set; }
 
         public bool Status { get; set; }
-
     }
 }

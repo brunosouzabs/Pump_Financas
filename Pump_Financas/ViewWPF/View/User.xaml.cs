@@ -1,6 +1,7 @@
 ﻿using Controller;
 using Model;
 using Model.DAL;
+using System.Collections.Generic;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -64,15 +65,34 @@ namespace ViewWPF
             }
             else
             {
-                new UsuarioController().Inserir(u);
-                this.Close();
+                if(new UsuarioController().BuscarPorEmail(u.Email) != null)
+                {
+                    txtEmail.Clear();
+                    MessageBox.Show("Usuário já existe");
+                }
+                else
+                {
+                    new UsuarioController().Inserir(u);
+                    this.Close();
+                }
             }
             
         }
-
         private void btnCancelarUser_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
+
+        private void cbxSelectUser_Loaded(object sender, RoutedEventArgs e)
+        {
+
+            List<Usuario> usuarios = new UsuarioController().ListarTodosUsuarios();
+
+            foreach (Usuario item in usuarios)
+            {
+                cbxSelectUser.Items.Add(item.Nome);
+            }
+            
+;        }
     }
-}
+ }
