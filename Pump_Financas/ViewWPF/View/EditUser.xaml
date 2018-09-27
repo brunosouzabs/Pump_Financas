@@ -1,12 +1,28 @@
-﻿<Window x:Class="ViewWPF.View.EditUser"
+﻿<Window x:Name="WinEditUser" x:Class="ViewWPF.View.EditUser"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ViewWPF.View"
         mc:Ignorable="d"
-        Title="EditUser" Height="450" Width="800">
+        Title="EditUser" Height="400" Width="500">
     <Grid>
-        
+        <Grid.Background>
+            <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
+        </Grid.Background>
+        <Label x:Name="lblTituloEditUser" Content="Edição de Usuários" HorizontalAlignment="Left" Margin="133,24,0,0" VerticalAlignment="Top" FontSize="22" FontWeight="Bold"/>
+        <Label x:Name="lblNomeCompleto" Content="Nome Completo" HorizontalAlignment="Left" Margin="12,127,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="135,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="307" Opacity="0.7"/>
+        <Label x:Name="lblEditPassUser" Content="Senha" HorizontalAlignment="Left" Margin="80,183,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <PasswordBox x:Name="pwdEditPassUser" HorizontalAlignment="Left" Margin="135,183,0,0" VerticalAlignment="Top" Width="307" Height="25" Opacity="0.7"/>
+        <Label x:Name="lblEditConfirmPassUser" Content="Confirmar Senha" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <PasswordBox x:Name="pwdEditConfirmPassUser" HorizontalAlignment="Left" Margin="135,231,0,0" VerticalAlignment="Top" Width="307" Height="25" Opacity="0.7"/>
+        <CheckBox x:Name="cbxEditAdmin" Content="Administrador" HorizontalAlignment="Left" Margin="135,276,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <CheckBox x:Name="cbxEditStatus" Content="Ativo" HorizontalAlignment="Left" Margin="299,276,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Label x:Name="lblEditUser" Content="Usuário" HorizontalAlignment="Left" Margin="69,82,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <ComboBox x:Name="cbxSelectUser" HorizontalAlignment="Left" Margin="135,88,0,0" VerticalAlignment="Top" Width="205"/>
+        <Button x:Name="btnSaveEdit" Content="Salvar" HorizontalAlignment="Left" Margin="135,320,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="btnCancelEdit" Content="Cancelar" HorizontalAlignment="Left" Margin="279,320,0,0" VerticalAlignment="Top" Width="75"/>
+
     </Grid>
 </Window>
