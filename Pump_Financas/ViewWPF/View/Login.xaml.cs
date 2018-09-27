@@ -33,9 +33,16 @@ namespace ViewWPF
 
         private void btnEntrar_Click(object sender, RoutedEventArgs e)
         {
-            if(new UsuarioController().BuscarPorEmail(txtLogin.Text) == null)
+            if(new UsuarioController().ValidarLogin(txtLogin.Text, pwbLogin.Password) != null)
             {
-                MessageBox.Show("Usuário não encontrado");
+                Home home = new Home();
+                home.ShowDialog();
+            }
+            else
+            {
+                txtLogin.Clear();
+                pwbLogin.Clear();
+                MessageBox.Show("Usuário ou Senha inválido");
             }
         }
 
