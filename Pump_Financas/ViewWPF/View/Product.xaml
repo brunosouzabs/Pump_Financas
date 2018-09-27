@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="Product" Height="600" Width="800">
     <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
@@ -14,22 +17,16 @@
         <TextBox x:Name="txtNome" HorizontalAlignment="Left" Height="25" Margin="156,221,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="422" Opacity="0.7"/>
         <Label x:Name="lblCodigo" Content="Código" HorizontalAlignment="Left" Margin="94,188,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="txtCodigo" HorizontalAlignment="Left" Height="25" Margin="157,188,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="422" Opacity="0.7"/>
-        <Label x:Name="lblCategoria" Content="Categoria" HorizontalAlignment="Left" Margin="78,251,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Label x:Name="lblValor" Content="Valor" HorizontalAlignment="Left" Margin="108,287,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <TextBox x:Name="txtValor" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="25" Margin="156,291,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134" Opacity="0.7"/>
-        <Label x:Name="lblQuantidade" Content="Quantidade" HorizontalAlignment="Left" Margin="306,287,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.054,-0.201"/>
-        <TextBox x:Name="txtQuantidade" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="25" Margin="397,291,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="103" Opacity="0.7"/>
-        <ComboBox x:Name="cbxCategoria" HorizontalAlignment="Left" Margin="157,257,0,0" VerticalAlignment="Top" Width="422" Height="25" Opacity="0.7" SelectionChanged="cbxCategoria_SelectionChanged">
-            <ComboBoxItem Content="Periféricos" HorizontalAlignment="Left" Width="420.8"/>
-            <ComboBoxItem Content="Acessórios" HorizontalAlignment="Left" Width="420.8"/>
-            <ComboBoxItem Content="Armazenamento" HorizontalAlignment="Left" Width="420.8"/>
-        </ComboBox>
+        <Label x:Name="lblValor" Content="Valor" HorizontalAlignment="Left" Margin="109,258,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <TextBox x:Name="txtValor" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="25" Margin="157,262,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="134" Opacity="0.7"/>
+        <Label x:Name="lblQuantidade" Content="Quantidade" HorizontalAlignment="Left" Margin="307,258,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold" RenderTransformOrigin="0.054,-0.201"/>
+        <TextBox x:Name="txtQuantidade" PreviewTextInput="NumberValidationTextBox" HorizontalAlignment="Left" Height="25" Margin="398,262,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" Width="103" Opacity="0.7"/>
         <Label x:Name="lblCadastroProdutos" Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="143,24,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Foreground="White"/>
-        <Button x:Name="btnSalvar" Content="Gravar" HorizontalAlignment="Left" Margin="503,345,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Click="btnSalvar_Click"/>
-        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="410,345,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="157,345,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
-        <CheckBox x:Name="cbxProdAtivo" Content="Listar" HorizontalAlignment="Left" Margin="522,293,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="btnProdCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="503,459,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Foreground="Red"/>
+        <Button x:Name="btnSalvar" Content="Gravar" HorizontalAlignment="Left" Margin="504,317,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Click="btnSalvar_Click"/>
+        <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="411,317,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="158,317,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
+        <CheckBox x:Name="cbxProdAtivo" Content="Listar" HorizontalAlignment="Left" Margin="523,264,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
+        <Button x:Name="btnProdCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="503,460,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Foreground="Red"/>
 
 
     </Grid>
