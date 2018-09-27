@@ -2,6 +2,7 @@
 using Model.DAL;
 using System.Collections.Generic;
 using System.Linq;
+using System.Windows;
 
 namespace Controller
 {
@@ -25,9 +26,30 @@ namespace Controller
         //BUSCA USUÁRIOS POR ID
         public Usuario BuscarPorEmail(string email)
         {
-            return contexto.Usuarios.Find(email);
+            return contexto.Usuarios.Find(email);           
         }
 
+        public Usuario ValidarLogin(string email, string senha)
+        {
+            if (new UsuarioController().BuscarPorEmail(email) == null)
+            {
+                return null;
+            }
+            else
+            {
+                Usuario u = new Usuario();
+                u = BuscarPorEmail(email);
+                if(u.Senha == senha)
+                {
+                    return u;
+                }
+                else
+                {
+                    return null;
+                }
+            }
+
+        }
         //EXLUIR USUÁRIOS
         void Excluir(string email)
         {
@@ -61,7 +83,7 @@ namespace Controller
         //PESQUISAR USUÁRIOS POR NOME
         List<Usuario> PesquisarPorNome(string Nome)
         {
-            var lista = from u in contexto.Usuarios where u.Nome == Nome select u;
+            var lista = from u in contexto.Usuarios where u.Email == Nome select u;
             return lista.ToList();
         }
     }
