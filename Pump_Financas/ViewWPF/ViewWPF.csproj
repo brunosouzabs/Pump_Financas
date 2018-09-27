@@ -67,9 +67,6 @@
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\ProductViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
-    <Compile Include="View\Categoria.xaml.cs">
-      <DependentUpon>Categoria.xaml</DependentUpon>
-    </Compile>
     <Compile Include="View\Configuration.xaml.cs">
       <DependentUpon>Configuration.xaml</DependentUpon>
     </Compile>
@@ -91,10 +88,6 @@
     <Compile Include="View\User.xaml.cs">
       <DependentUpon>User.xaml</DependentUpon>
     </Compile>
-    <Page Include="View\Categoria.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
     <Page Include="View\Configuration.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

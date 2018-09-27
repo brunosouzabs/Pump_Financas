@@ -74,5 +74,12 @@ namespace ViewWPF
             this.Close();
             editProd.ShowDialog();
         }
+
+        private void btnProdCancelar_Click(object sender, RoutedEventArgs e)
+        {
+            Home home = new Home();
+            this.Close();
+            home.ShowDialog();
+        }
     }
 }

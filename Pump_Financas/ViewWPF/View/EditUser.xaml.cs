@@ -107,7 +107,7 @@ namespace ViewWPF.View
                 else
                 {
                     new UsuarioController().Excluir(cbxSelectUser.Text);
-                    MessageBox.Show("Usuário ecluído com sucesso!");
+                    MessageBox.Show("Usuário excluído com sucesso!");
                     EditUser edit = new EditUser();
                     this.Close();
                     edit.ShowDialog();

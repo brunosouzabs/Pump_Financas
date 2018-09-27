@@ -24,9 +24,8 @@
         <Label x:Name="lblCadastroProdutos" Content="Cadastro de Produtos" HorizontalAlignment="Left" Margin="143,24,0,0" VerticalAlignment="Top" FontSize="48" FontWeight="Bold" Foreground="White"/>
         <Button x:Name="btnSalvar" Content="Gravar" HorizontalAlignment="Left" Margin="504,317,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Click="btnSalvar_Click"/>
         <Button x:Name="btnEditar" Content="Editar" HorizontalAlignment="Left" Margin="411,317,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Click="btnEditar_Click"/>
-        <Button x:Name="btnExcluir" Content="Excluir" HorizontalAlignment="Left" Margin="158,317,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold"/>
         <CheckBox x:Name="cbxProdAtivo" Content="Listar" HorizontalAlignment="Left" Margin="523,264,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
-        <Button x:Name="btnProdCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="503,460,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Foreground="Red"/>
+        <Button x:Name="btnProdCancelar" Content="Cancelar" HorizontalAlignment="Left" Margin="503,460,0,0" VerticalAlignment="Top" Width="75" FontSize="14" FontWeight="Bold" Foreground="Red" Click="btnProdCancelar_Click"/>
 
 
     </Grid>
