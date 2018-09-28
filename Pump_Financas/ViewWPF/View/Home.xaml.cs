@@ -3,6 +3,7 @@ using Model;
 using System;
 using System.Collections.Generic;
 using System.Windows;
+using ViewWPF.View;
 
 namespace ViewWPF
 {
@@ -74,6 +75,13 @@ namespace ViewWPF
             Configuration config = new Configuration();
             this.Close();
             config.ShowDialog();
+        }
+
+        private void btnProdutos_Click(object sender, RoutedEventArgs e)
+        {
+            ListarProdutos listprod = new ListarProdutos();
+            this.Close();
+            listprod.ShowDialog();
         }
     }
 }

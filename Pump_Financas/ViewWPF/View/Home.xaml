@@ -10,7 +10,7 @@
         <Grid.Background>
             <ImageBrush ImageSource="https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/JrbItQz/futuristic-network-shape-abstract-3d-render-animation-loop-4k-uhd-3840x2160_shn2kl_y__F0000.png"/>
         </Grid.Background>
-        <Button x:Name="btnProdutos" Content="Produtos" HorizontalAlignment="Left" Margin="47,100,0,0" VerticalAlignment="Top" Width="150" Height="80" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="btnProdutos" Content="Produtos" HorizontalAlignment="Left" Margin="47,100,0,0" VerticalAlignment="Top" Width="150" Height="80" FontWeight="Bold" FontSize="16" Click="btnProdutos_Click"/>
         <Button x:Name="btnCadastroProd" Content="Cadastro Produtos" HorizontalAlignment="Left" Margin="47,210,0,0" VerticalAlignment="Top" Width="150" Height="80" FontSize="16" FontWeight="Bold" Click="btnCadastroProd_Click"/>
         <Button x:Name="btnConfig" Content="Configurações" HorizontalAlignment="Left" Margin="47,316,0,0" VerticalAlignment="Top" Width="150" Height="80" FontSize="16" FontWeight="Bold" Click="btnConfig_Click_1"/>
         <Button x:Name="btnLogoff" Content="Logoff" HorizontalAlignment="Left" Margin="47,512,0,0" VerticalAlignment="Top" Width="150" Height="30" FontSize="16" FontWeight="Bold" Foreground="Red" Click="btnLogoff_Click"/>
